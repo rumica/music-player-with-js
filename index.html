@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player with Vanilla JavaScript</title>
+</head>
+<body>
+    <h1>Music Player with JavaScript</h1>
+    <div class="main-container">
+        <div class="music-info">
+           <h4 id="music-title"></h4>
+           <div class="progress-container">
+               <div class="progress"></div>
+           </div> 
+        </div>
+
+        <audio id="audio" src=""></audio>
+
+        <div class="img-container">
+            <img id="music-cover" src="" alt="">
+        </div>
+
+        <div class="navbar-container">
+            <button id="prev-btn" class="navbar-btn">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button id="play-btn" class="navbar-btn">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="next-btn" class="navbar-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
