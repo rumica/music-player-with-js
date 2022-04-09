@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 * {
     margin: 0;
@@ -13,12 +14,15 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #ede2d2;
+    background: rgb(249,221,167);
+background: linear-gradient(90deg, rgba(249,221,167,1) 0%, rgba(237,203,203,1) 69%);
     height: 100vh;
 }
 
 h1 {
-    color: #bd821c;
+    color: #eb8080;
+    text-shadow: 5px 5px 10px rgb(136, 136, 136);
+    font-family: 'Cabin', sans-serif;
 }
 
 .main-container {
@@ -92,6 +96,7 @@ h1 {
     cursor: pointer;
     font-size: 20px;
     outline: none;
+    transition: 0.2s;
 }
 
 .navbar-container button:nth-of-type(2) {
@@ -131,9 +136,13 @@ h1 {
 }
 
 .progress {
-    background-color: #EB984E;
+    background-color: #f1cb7f;
     border-radius: 5px;
     height: 100%;
     width: 0%;
-    transform: width 0.1s linear;
+    transition: width 0.1s linear;
+}
+
+#play-btn:hover, #prev-btn:hover, #next-btn:hover {
+    transform: scale(1.3);
 }
